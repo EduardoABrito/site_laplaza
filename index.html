@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/png" href="https://www.plazacity.com.br/images/logo.png" sizes="16x16" />
+
+  <title>La Plaza City</title>
+  <!-- stylesheet -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900" rel="stylesheet">
+  <link href="./vendor/fontawesome/all.min.css"rel="stylesheet" />
+  <link href="./vendor/site/front/styles/styles.css" rel="stylesheet" type="text/css">
+  <link href="./vendor/site/front/styles/login.css" rel="stylesheet" type="text/css">
+  <link href="./vendor/site/front/styles/custom-responsive-styles.css" rel="stylesheet" type="text/css">
+ 
+</head>
+<body id="page-top">
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fa fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="smooth-scroll" href="#Header"></a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="smooth-scroll" href="#page-top">Inicio</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="smooth-scroll" href="#sobre">Servidor</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="login.php">Login</a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <!-- TELA DE LOADING -->
+<div id="loading">
+    <img src="https://www.plazacity.com.br/images/logo.png"/>
+    <svg id="loadingAnimate" width="200" height="200" viewBox="0 0 100 100">
+        <polyline class="line-cornered stroke-still" points="0,0 0,100 100,100" stroke-width="10" fill="none"></polyline>
+        <polyline class="line-cornered stroke-still" points="0,0 100,0 100,100" stroke-width="10" fill="none"></polyline>
+        <polyline class="line-cornered stroke-animation" points="0,0 0,100 100,100" stroke-width="10" fill="none"></polyline>
+        <polyline class="line-cornered stroke-animation" points="0,0 100,0 100,100" stroke-width="10" fill="none"></polyline>
+    </svg>
+</div>
+  <!-- FIM TELA DE LOADING -->
+
+ <!-- Header Starts -->
+  <section id="Banner" class="content-section">
+    <div class="container content-wrap text-center">
+           
+     
+    </div>
+    <div class="overlay"></div>
+  </section>
+  <!-- Header Ends -->
+  <!-- About Us Starts -->
+  <section id="sobre" class="content-section">
+    <div class="container text-center">
+      <div class="row">
+        
+        <div class="col-lg-12" id="text">
+          <!-- <div class="logo2">
+            <img src="https://www.plazacity.com.br/images/logo.png">
+          </div> -->
+          <div class="div_title">
+
+            <h1 id="titulo" class="typeWriter"></h1>   
+          </div>
+
+          <div>
+            <a class="btn btn-primary btn_action launcher"><i class="fa fa-download"></i>&nbsp;Baixar launcher</a>
+            <a class="btn btn-primary btn_action servidor"><i class="fa fa-download"></i>&nbsp;Entrar no servidor</a>
+            <a class="btn btn-primary btn_action discord"><i class="fa fa-download"></i>&nbsp;Discord</a>
+          </div>
+      </div>
+    </div>
+  </section>
+ 
+  <footer class="footer text-center" >
+    <div class="container">
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3"  href="https://www.facebook.com/laplazacity" target="_blank">
+              <i class="fab fa-facebook-f" aria-hidden="true" ></i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/laplazacity/" target="_blank">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="https://discord.gg/4c4t57sjfK" target="_blank">
+              <i class="fab fa-discord" aria-hidden="true"></i>
+            </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0" id="text" >Copyright © LaPlaza Immersion</p>
+    </div>
+  </footer>
+</body>
+<!--scripts-->
+<script src="./vendor/jquery/jquery.min.js"></script>
+<script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="./vendor/site/front/scripts/all-plugins.js"></script>
+<script src="./vendor/site/front/scripts/plugins-activate.js"></script>
+<script src="./vendor/site/front/scripts/typeWriter.js"></script>
+<script src="./vendor/site/front/scripts/index.js"></script>
+</html>

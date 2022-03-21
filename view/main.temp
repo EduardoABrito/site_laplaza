@@ -1,0 +1,164 @@
+
+<script>
+  $(document).ready(function() {
+    // Javascript method's body can be found in assets/js/demos.js
+    demo.initDashboardPageCharts();
+
+  });
+</script>
+
+
+<%- include('../../inc/header.ejs') %>
+<body class="">
+    <%- include("../../inc/nav.html") %>
+      <div class="content">
+          <div class="row">
+            <%- include("loja.html") %>
+          </div>
+          <footer class="footer">
+              <div class="container-fluid">
+            <div class="copyright">
+              © 2020 
+              <script>
+                document.write(new Date().getFullYear())
+              </script>  made with <i class="tim-icons icon-heart-2"></i> by
+              <a href="https://www.creative-tim.com" target="_blank">Creative Tim | LaplazaCity</a> for a better web.
+            </div>
+          </div>
+         </footer>
+      </div>
+      
+      <div class="fixed-plugin">
+        <div class="dropdown show-dropdown">
+          <a href="#" data-toggle="dropdown">
+            <i class="fa fa-cog fa-2x"> </i>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="header-title"> Temas</li>
+            <li class="adjustments-line">
+              <a href="javascript:void(0)" class="switch-trigger background-color">
+                <div class="badge-colors text-center">
+                  <span class="badge filter badge-primary active" data-color="primary"></span>
+                  <span class="badge filter badge-info" data-color="blue"></span>
+                  <span class="badge filter badge-success" data-color="green"></span>
+                </div>
+                <div class="clearfix"></div>
+              </a>
+            </li>
+            <li class="adjustments-line text-center color-change">
+              <span class="color-label">LIGHT MODE</span>
+              <span class="badge light-badge mr-2"></span>
+              <span class="badge dark-badge ml-2"></span>
+              <span class="color-label">DARK MODE</span>
+            </li>
+            <br>
+          </ul>
+        </div>
+      </div>
+    <%- include("../../vendor/site/login/assets/js/scripts.html") %>
+    </body>
+    </html>
+
+<!-- <%- include('../../inc/footer.ejs') %> -->
+
+
+<!-- 
+    {
+  weapons: {
+    GADGET_PARACHUTE: { ammo: 0 },
+    WEAPON_ASSAULTRIFLE: { ammo: 0 },
+    WEAPON_SMG: { ammo: 135 },
+    WEAPON_REVOLVER_MK2: { ammo: 0 },
+    WEAPON_STUNGUN: { ammo: -1 },
+    WEAPON_CARBINERIFLE: { ammo: 184 },
+    WEAPON_PISTOL_MK2: { ammo: 246 }
+  },
+  inventory: {
+    roupas: { amount: 1 },
+    tuning: { amount: 40679 },
+    celular: { amount: 1 }
+  },
+  cloakroom_idle: {
+    '0': [ 0, 0, 0 ],
+    '1': [ 95, 5, 2 ],
+    '2': [ 4, 0, 0 ],
+    '3': [ 6, 0, 2 ],
+    '4': [ 24, 2, 2 ],
+    '5': [ -1, 0, 2 ],
+    '6': [ 10, 0, 2 ],
+    '7': [ 0, 0, 2 ],
+    '8': [ 31, 0, 2 ],
+    '9': [ -1, 0, 2 ],
+    '10': [ -1, 0, 2 ],
+    '11': [ 31, 2, 2 ],
+    '12': [ 65536, 0, 0 ],
+    '13': [ 0, 2, 0 ],
+    '14': [ 0, 0, 255 ],
+    '15': [ 1280, 2, 100 ],
+    '16': [ 2, 2, 255 ],
+    '17': [ 33554432, 2, 255 ],
+    '18': [ 33554944, 2, 255 ],
+    '19': [ 33686018, 2, 255 ],
+    '20': [ 33686018, 2, 255 ],
+    modelhash: 1885233650,
+    p7: [ -1, 0 ],
+    p5: [ -1, 0 ],
+    p9: [ -1, 0 ],
+    p1: [ -1, 0 ],
+    p3: [ -1, 0 ],
+    p6: [ -1, 0 ],
+    p4: [ -1, 0 ],
+    p0: [ -1, 0 ],
+    p2: [ -1, 0 ],
+    p10: [ -1, 0 ],
+    p8: [ -1, 0 ]
+  },
+  colete: 100,
+  health: 400,
+  position: { y: -1096.6083984375, x: -44.87446975708008, z: 26.422344207763672 },
+  groups: {
+    youtuber: true,
+    Admin: true,
+    '@Onion!': true,
+    janca: true,
+    head_dev: true,
+    raposa: true
+  },
+  customization: {
+    '0': [ 0, 0, 0 ],
+    '1': [ 95, 0, 2 ],
+    '2': [ 4, 0, 0 ],
+    '3': [ 6, 0, 2 ],
+    '4': [ 24, 2, 2 ],
+    '5': [ -1, 0, 2 ],
+    '6': [ 10, 0, 2 ],
+    '7': [ 28, 5, 2 ],
+    '8': [ 31, 0, 2 ],
+    '9': [ 0, 0, 2 ],
+    '10': [ -1, 0, 2 ],
+    '11': [ 31, 2, 2 ],
+    '12': [ 65536, 0, 0 ],
+    '13': [ 0, 2, 0 ],
+    '14': [ 0, 0, 255 ],
+    '15': [ 0, 2, 100 ],
+    '16': [ 83886082, 2, 255 ],
+    '17': [ 33554432, 2, 255 ],
+    '18': [ 33554944, 2, 255 ],
+    '19': [ 33686018, 2, 255 ],
+    '20': [ 33686018, 2, 255 ],
+    p1: [ -1, 0 ],
+    p0: [ -1, 0 ],
+    p3: [ -1, 0 ],
+    p2: [ -1, 0 ],
+    modelhash: 1885233650,
+    p6: [ -1, 0 ],
+    p7: [ -1, 0 ],
+    p4: [ -1, 0 ],
+    p5: [ -1, 0 ],
+    p10: [ -1, 0 ],
+    p9: [ -1, 0 ],
+    p8: [ -1, 0 ]
+  },
+  gaptitudes: { physical: { strength: 1900 } }
+}
+ -->
